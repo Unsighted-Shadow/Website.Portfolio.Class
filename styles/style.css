@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --main-colour: #000000;
+    --second-colour: #f6f6f6; 
+    --third-colour: #22d4fd;
+    --hover-colour: #272727;
+    --main-font: 'Krona One', sans-serif;
+    --sec-font: 'Montserrat', sans-serif;
+}
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--main-colour);
+    color: var(--second-colour);
+}
+
+.heading {
+    padding: 2% 0% 0% 15%;
+}
+
+.heading__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.heading__menu__link {
+    font-family: var(--sec-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--third-colour);
+    text-decoration: none;
+}
+
+.tytle {
+    color: var(--third-colour);
+}
+
+.style {
+    padding: 5% 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.style__overview {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+} 
+
+.style__overview__tytle {
+    font-size: 2.25rem;
+    font-family: var(--main-font);
+}
+
+.style__overview__paragraph {
+    font-size: 1.5rem;
+    font-family: var(--sec-font);
+}
+
+.style__subtytle {
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: center;
+}
+
+.style__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.style__links__2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img {
+    height: 45%;
+    width: 45%;
+}
+
+.style__links__button {
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.375rem;
+    padding: 21.5px;
+    text-decoration: none;
+    color: (var(--second-colour));
+    font-family: var(--sec-font);
+    font-weight: 600;
+    border: 2px solid var(--third-colour);
+}
+
+.style__links__button:hover {
+    background-color: var(--hover-colour);
+}
+
+.foot {
+    color: var(--main-colour);
+    background-color: var(--third-colour);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--sec-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .style {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .style__overview {
+        width: auto;
+    }
+
+    .heading {
+        padding: 10%;
+    }
+
+    .heading__menu {
+        justify-content: center;
+    }
+
+}
